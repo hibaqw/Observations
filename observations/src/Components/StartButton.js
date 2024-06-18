@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import '../styles/App.css'
+import '../styles/Root.css'
 
 const StartButton = ({ children, ...props }) => {
   return (

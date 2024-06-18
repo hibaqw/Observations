@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/App.css';
+import '../styles/Root.css';
 import Stack from 'react-bootstrap/Stack';
-import ornament from './docs/ornament.png'
-import shook_cat from './docs/shook_cat.png'
-import StartButton from './Components/StartButton';
+import ornament from '../docs/ornament.png'
+import shook_cat from '../docs/shook_cat.png'
+import StartButton from '../Components/StartButton';
 
 
-function App() {
+function Root() {
   return (
     <div class="App">
      <Stack gap={2}>
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;
