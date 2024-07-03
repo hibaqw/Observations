@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Routes/Root';
+import SocietyPaper from './Routes/SocietyPaper'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/>,
+  },
+  {
+    path: "/society-paper",
+    element: <SocietyPaper/>,
   },
 ]);
 
