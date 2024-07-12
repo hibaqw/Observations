@@ -8,7 +8,9 @@ import CustomTextArea from './CustomTextArea';
 
 
 function QuestionForm() {
-  // quizlet questions
+  /* quizlet questions
+  TODO: Move Questions into a separate js file
+   */
   const sections = [
     { sectionName:'Settings & Context', sectionQuestions: [
      { question: 'What genre does you Society Paper belong to?*', isSelect: true, isRequired: true, answers: ['Fantasy 🐉', 'Scifi 🛸', 'Historial ⏳', 'Mystery/Psychological 🕵🏾', 'Young Adult 🏫'] },
@@ -88,8 +90,8 @@ function QuestionForm() {
      {sections[section].sectionQuestions.map((item, key) => {
       return (
         
-      item.isSelect?  <Select item={item}/>
-      : <CustomTextArea question={item.question}/> )})}
+      item.isSelect?  <Select id={sections[section].sectionName}item={item} selectKey={key}/>
+      : <CustomTextArea question={item.question} key={key}/> )})}
      <div className='d-flex flex-column'>
       {/* might have to make a separate button to handle generating the society paper */}
      <Button className='mt-2 mb-2' id={`continueBtn`} type='submit' onClick={(event) => {handleNext(event)}}>

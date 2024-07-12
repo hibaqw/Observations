@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/SocietyPaper.css';
-import { useState } from 'react';
+import { useState} from 'react';
 import Stack from 'react-bootstrap/Stack';
 import { Container, Row, Col } from 'react-bootstrap';
 import QuestionForm from '../Components/QuestionForm';
+
 
 function SocietyPaper() {
   return (

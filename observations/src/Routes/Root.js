@@ -7,6 +7,7 @@ import StartButton from '../Components/StartButton';
 
 
 function Root() {
+  /* TODO: Flatten routes into one SPA app */
   return (
     <div class="App">
      <Stack gap={2}>
