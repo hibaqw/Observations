@@ -5,10 +5,9 @@ export const SelectContext = createContext();
 export const SelectProvider = ({children}) => 
   {
     const values1 = ['a','a'];
-    const values2 = [null, 'a']
-    const [selectedOptions, setSelectedOptions] = useState({ [SETTINGS_AND_CONTEXT] : values1, [SOCIETAL_CUSTOMS_AND_NORMS]: values2});
-    
+    const values2 = [null, 'a'];
 
+    const [selectedOptions, setSelectedOptions] = useState({ [SETTINGS_AND_CONTEXT] : values1, [SOCIETAL_CUSTOMS_AND_NORMS]: values2});
     const handleChange = (selectValue, selectName, selectKey) => {
 
       if (selectName == SETTINGS_AND_CONTEXT) {
@@ -25,10 +24,6 @@ export const SelectProvider = ({children}) =>
 
           }))
       }
-
-    
-    
-      console.log(selectedOptions)
       
     };
 

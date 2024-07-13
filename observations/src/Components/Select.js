@@ -20,10 +20,10 @@ function Select(props) {
     console.log('Current Value:', selectValue);
     handleChange(selectValue, props.id, props.selectKey);
   }, [selectValue]);
-  
+
   return (
-  <FormGroup>
-  <Form.Label>{props.item.question}</Form.Label>
+  <FormGroup className='mb-4'>
+  <Form.Label className='mb-3'>{props.item.question}</Form.Label>
     <Form.Select name={props.id} id={props.id} value={selectValue} className='selectInput my-3' onChange={(event) => handleSelectChange(event)} >
     {props.item.answers.map((answer, key) => {
       return (

@@ -9,6 +9,7 @@ import Root from './Routes/Root';
 import SocietyPaper from './Routes/SocietyPaper'
 import reportWebVitals from './reportWebVitals';
 import { SelectProvider } from './Providers/SelectProvider';
+import { TextAreaProvider } from './Providers/TextAreaProvider';
 
 
 const router = createBrowserRouter([
@@ -25,9 +26,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <TextAreaProvider>
     <SelectProvider>
     <RouterProvider router={router} />
     </SelectProvider>
+    </TextAreaProvider>
   </React.StrictMode>
 );
 
