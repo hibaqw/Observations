@@ -5,18 +5,21 @@ export const TextAreaContext = createContext();
 export const TextAreaProvider = ({children}) => {
 
   const [textAreas, setTextAreas] = useState({
-    'setting':'',
-    'culture':'',
-    'characters':'',
-    'conflicts':'',
-    'relationships':'',
-    'scandals':'',
-    'phenomena':'',
-    'rumours':'',
-    'customs':'',
-    'headline':'',
-    'summary':''
+    setting:'',
+    culture:'',
+    characters:'',
+    conflicts:'',
+    relationships:'',
+    events:'',
+    scandals:'',
+    phenomena:'',
+    rumours:'',
+    customs:'',
+    headline:'',
+    summary:''
   })
+
+
 
   
   const handleChange = (textAreaName, value) => {
@@ -28,6 +31,10 @@ export const TextAreaProvider = ({children}) => {
     console.log(textAreas);
 
   };
+
+
+
+
 
 
 

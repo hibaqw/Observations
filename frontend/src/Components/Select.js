@@ -1,6 +1,5 @@
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/QuestionForm.css';
 import { useEffect, useState, useContext } from 'react';
 import { FormGroup } from 'react-bootstrap';
 import { SelectContext } from '../Providers/SelectProvider';

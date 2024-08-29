@@ -1,10 +1,7 @@
-.society-paper{
-  height: 100vh;
-  width: 100%;
-}
 
-.society-paper, html{
+.society-paper{
   background-color: #DAD7CD;
+  
 }
 
 .observations-screen{

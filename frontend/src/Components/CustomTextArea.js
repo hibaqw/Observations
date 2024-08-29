@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/QuestionForm.css';
 import { FormGroup } from 'react-bootstrap';
 
 import { TextAreaContext } from '../Providers/TextAreaProvider';
@@ -10,7 +9,7 @@ import TextCounter from './TextCounter';
 
 function CustomTextArea(props) {
 
-  const { textAreas, handleChange } = useContext(TextAreaContext);
+  const { textAreas, handleChange} = useContext(TextAreaContext);
 
   const [counterText, setCounterText] = useState(200);
 
@@ -37,7 +36,8 @@ function CustomTextArea(props) {
     rows={3} 
     value={textAreas[props.textName]} 
     onChange={handleOnChangeEvent}
-    maxLength={200}/>
+    maxLength={200}
+    />
      <TextCounter charsLeft = {counterText}/>
     </FormGroup>
    

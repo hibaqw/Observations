@@ -14,12 +14,11 @@
 }
 
 #continueBtn{
+  background: #A3B18A;
+  border: #A3B18A;
   color: #F5F5F5;
   border-radius: 12px;
   padding: 0.75em;
 }
 
-#continueBtn{
-  background: #A3B18A;
-  border: #A3B18A;
-}
+

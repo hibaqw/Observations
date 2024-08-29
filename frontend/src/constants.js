@@ -3,7 +3,7 @@
 export const SETTINGS_AND_CONTEXT = 'Settings & Context';
 export const SOCIETAL_CUSTOMS_AND_NORMS = 'Societal Customs & Norms';
 
-export const sections = [
+export const SECTIONS_TEXT = [
   { sectionName:'Settings & Context', sectionQuestions: [
    { question: 'What genre does you Society Paper belong to?*', isSelect: true, isRequired: true, answers: ['Fantasy 🐉', 'Scifi 🛸', 'Historial ⏳', 'Mystery/Psychological 🕵🏾', 'Young Adult 🏫'] },
    { question: <span className='monserrat-regular'>What is the primary setting the society sheet will cover?*</span>, isSelect: true, isRequired: true, answers: ['A royal court', 'Elon Musk’s Martian Colony', 'Regency-Era England', 'Your mysterious neighbour’s basement', 'A prestigious private academy', 'Other'] },
