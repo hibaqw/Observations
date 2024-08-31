@@ -3,6 +3,7 @@ import '../styles/Root.css';
 import Stack from 'react-bootstrap/Stack';
 import ornament from '../docs/ornament.png'
 import shook_cat from '../docs/shook_cat.png';
+import dancing_nymph from '../docs/dancing_nymph.png';
 import StartButton from '../Components/StartButton';
 
 
@@ -19,7 +20,7 @@ function Root() {
       <div className='mt-5 mb-2 d-flex justify-content-center'>
       <p className={'mx-5 newsreader-medium display-6 d-flex align-items-center'}> est. </p>
       <div className='img-container'>
-      <img className={'shook-cat'} src={shook_cat} alt="funny cat with shocked expression" />
+      <img className={'dancing-nymph'} src={dancing_nymph} alt="image of a dancing nymph" />
       </div>
       <p className={'mx-5 newsreader-medium display-6 d-flex align-items-center'}> 2024 </p>
       </div>
