@@ -9,6 +9,8 @@ import EventsForm from '../Components/EventsForms';
 import MysteriousHappeningsForm from '../Components/MysteriousHappeningsForm';
 import SocietalNormsForm from '../Components/SocietalNormsForm';
 import HeadlineForm from '../Components/HeadlineForm';
+import EmptySheet from '../Components/EmptySheet';
+import CustomNavBar from '../Components/CustomNavBar';
 
 function SocietyPaper() {
   const [sectionNumber, setSectionNumber] = useState(1);
@@ -71,11 +73,12 @@ function SocietyPaper() {
   return (
     <Container fluid className='society-paper'>  
     <Row> 
-      <Col className='d-flex justify-content-center'>
+      <Col className='d-flex justify-content-center mt-5'>
       {navigateSections(sectionNumber)}
       </Col>
       <Col className='observations-screen'>
-      Society Paper
+      <CustomNavBar/>
+      <EmptySheet/>
     </Col>
     </Row>
    

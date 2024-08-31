@@ -1,4 +1,7 @@
-
+* {
+  padding: 0;
+  margin: 0;
+}
 .society-paper{
   background-color: #DAD7CD;
   
@@ -23,3 +26,44 @@
   font-style: normal;
   color: #222020;
 }
+
+#custom-nav{
+  border-bottom: #939189 solid;
+}
+
+.share-btn{
+  background: #A3B18A;
+  border: #A3B18A;
+  color: #F5F5F5;
+  padding: 0.5em 2.5em;
+
+}
+
+.share-btn:hover {
+  background: #c6d7a7;
+  transtion: 0.7s;
+}
+
+.share-icon{
+  color:#F5F5F5;
+  margin-right: 10px;
+}
+
+.files-folder{
+  width: 16em;
+   height: 18em;
+ }
+
+ body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DAD7CD 0%,
+    #DAD7CD 50%,
+    #CAC6B9 50%,
+    #CAC6B9 100%
+
+
+  );
+ }
+ 
