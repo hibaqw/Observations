@@ -1,8 +1,3 @@
-
-
-export const SETTINGS_AND_CONTEXT = 'Settings & Context';
-export const SOCIETAL_CUSTOMS_AND_NORMS = 'Societal Customs & Norms';
-
 export const SECTIONS_TEXT = [
   { sectionName:'Settings & Context', sectionQuestions: [
    { question: <span>What genre does you Society Paper belong to?<span style={{color:'#F75252'}}>*</span>.</span>, answers: ['Please Select an Option','Fantasy 🐉', 'Scifi 🛸', 'Historial ⏳', 'Mystery/Psychological 🕵🏾', 'Young Adult 🏫'] },
