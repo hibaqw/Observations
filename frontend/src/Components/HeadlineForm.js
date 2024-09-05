@@ -1,17 +1,36 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import { FormGroup, Button } from 'react-bootstrap';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import {SECTIONS_TEXT} from '../constants';
 
 function HeadlinesForm(props) {
   const sectionName = SECTIONS_TEXT[5].sectionName;
   const sectionQuestions = SECTIONS_TEXT[5].sectionQuestions;
+  const [errors, setErrors] = useState({});
 
+
+  const checkErrors = () => {
+    const errorObj = {}
+    if ( props.values.headline === ''){
+      errorObj.headline = "Please enter the headline that you wish to display on the society sheet."
+    }
+
+    return errorObj;
+     
+  } 
 
   const Continue = e => {
     e.preventDefault();
+    const newErrors = checkErrors();
+    // Conditional logic:
+    if ( Object.keys(newErrors).length > 0 ) {
+      // We got errors!
+      setErrors(newErrors);
+      console.log(newErrors);
+      return;
+    }
   }
 
   const Previous = e => {
@@ -32,9 +51,11 @@ function HeadlinesForm(props) {
     className="textAreaInput" 
     rows={3} 
     value={props.values.headline} 
+    isInvalid ={!!errors.headline}
     onChange={ (event) => props.handleChange('headline', event.target.value)}
     maxLength={200}
     />
+     <Form.Control.Feedback type='invalid'>{ errors.headline}</Form.Control.Feedback>
     </FormGroup>
     <FormGroup className='mb-4'>
     <Form.Label className='mb-3'>{sectionQuestions[1].question}</Form.Label>

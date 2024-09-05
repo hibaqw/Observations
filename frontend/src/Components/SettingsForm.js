@@ -22,13 +22,14 @@ function SettingsForm(props) {
 
   const checkErrors = () => {
     const errorObj = {}
+  
     if ( props.values.genre === '' || props.values.genre === 'a'){
       errorObj.genre = "Please select one of the valid options."
     }
     if (props.values.setting === '' || props.values.setting === 'a'){
       errorObj.setting = "Please select one of the valid options."
     }
-    if (props.values.setting === 'g' && props.values.customSetting ===''){
+    if (props.values.setting === 'g' && props.values.customSetting === ''  ){
       errorObj.customSetting = "Please enter a valid response for the setting of the society sheet."
     }
     return errorObj;
