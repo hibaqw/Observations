@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Root.css';
 import Stack from 'react-bootstrap/Stack';
 import ornament from '../docs/ornament.png'
-import shook_cat from '../docs/shook_cat.png';
 import dancing_nymph from '../docs/dancing_nymph.png';
 import StartButton from '../Components/StartButton';
 

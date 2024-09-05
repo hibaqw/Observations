@@ -33,6 +33,7 @@ function SocietyPaper() {
     summary:''
   });
 
+
   const prevSection = () => {
 
     setSectionNumber( sectionNumber => sectionNumber - 1);
